@@ -34,7 +34,7 @@ SET user_id = (
     SELECT id
     FROM users
     WHERE users.firstname = edusign.firstname
-    AND users.lastname = edusign.fisrtname
+    AND users.lastname = edusign.firstname
     AND users.email = edusign.email
 );
 
@@ -54,7 +54,7 @@ WHERE firstname LIKE 'B%'; -- %: n'importe quel caractère après la lettre B
 
 SELECT COUNT(*) FROM users;
 
-SELECT fisrtname FROM users;
+SELECT firstname FROM users;
 
 -- level moyen, 1: Insertion ligne dans la table edusign pour l'user Ada avec une nouvelle date de signature
 INSERT INTO edusign (user_id, date_signature)
