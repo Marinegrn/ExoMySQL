@@ -50,7 +50,7 @@ SELECT firstname FROM users
 WHERE id = 1;
 
 SELECT COUNT(*) FROM users
-WHERE firstname LIKE 'B%'; -- %: n'iimporte quel caractère après la lettre B
+WHERE firstname LIKE 'B%'; -- %: n'importe quel caractère après la lettre B
 
 SELECT COUNT(*) FROM users;
 
